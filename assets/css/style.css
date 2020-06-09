@@ -1,21 +1,23 @@
 body {
   font-family: "Roboto", sans-serif;
-  background: #2193b0; /* fallback for old browsers */
+  
+  background: #2193b0;
+  
   background: -webkit-linear-gradient(
     to right,
     #6dd5ed,
     #2193b0
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
+  
   background: linear-gradient(
     to right,
     #6dd5ed,
     #2193b0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
+  
 }
 
 #container {
-  /* background-color: grey; */
-  /* border: 2px solid grey; */
   box-shadow: 0 0 3px rgba(124, 113, 113, 0.5);
   width: 360px;
   background-color: #f7f7f7;
@@ -46,7 +48,6 @@ input {
   -webkit-box-sizing: border-box;
   color: #49a0da;
   border: 3px solid rgba(0, 0, 0, 0);
-  /* removes gross auto border and uneveness */
 }
 
 input:focus {
@@ -69,15 +70,11 @@ li {
 }
 
 li:nth-child(2n) {
-  /* every other li has these parameters */
   background-color: #f7f7f7;
 }
 
 li:hover span {
-  /* this makes it so that when an li is hovered over the SPAN is affected */
   width: 40px;
-  /* makes it longer and bigger,won't work until display is changed to inline-block */
-
   opacity: 1;
 }
 
@@ -93,10 +90,7 @@ span {
   color: white;
   text-align: center;
   width: 0px;
-  /* hide with until hovered, where the inline block can come out */
   display: inline-block;
-  /* makes it a huge block, width determines how much space it has */
   transition: 0.25s linear;
   opacity: 0;
-  /* hides icon and adds fade */
 }
